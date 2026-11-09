@@ -1,0 +1,63 @@
+# Todos los importes y rendimientos son supuestos ilustrativos, no cotizaciones.
+moneda: COP
+parametros_generales:
+  smmlv: 1423500  # Valor ilustrativo parametrizable; no es una afirmación del SMMLV vigente.
+  auxilio_transporte: 200000
+  limite_auxilio_smmlv: 2
+  factor_prestacional: 0.52
+  horas_semana: 40
+  plazo_maximo_semanas: 24
+  presupuesto_tope: 1000000000
+  tarifa_tradicional_hora: 25000
+  iteraciones_monte_carlo: 40
+  variacion_salarios: 0.10
+  semilla: 2026
+  peso_tiempo: 1200000
+  minimo_mantenimiento_horas: 80
+  qa_por_desarrolladores: 5
+  qa_minimo_desarrollo: 0.20
+roles:
+  frontend: { salario_mensual: 4800000, max_personas: 4 }
+  backend: { salario_mensual: 5600000, max_personas: 4 }
+  qa: { salario_mensual: 3900000, max_personas: 3 }
+  ux: { salario_mensual: 4500000, max_personas: 2 }
+  lider_tecnico: { salario_mensual: 7500000, max_personas: 1 }
+  devops: { salario_mensual: 6100000, max_personas: 2 }
+tecnologias:
+  hosting:
+    basico: { costo_fijo: 1200000, costo_mensual: 350000 }
+    administrado: { costo_fijo: 2500000, costo_mensual: 900000 }
+  pasarela:
+    estandar: { costo_fijo: 0, costo_mensual: 250000 }
+    avanzada: { costo_fijo: 1800000, costo_mensual: 700000 }
+  plataforma:
+    a_medida: { costo_fijo: 0, factor_esfuerzo: 1.0, costo_mensual: 0 }
+    saas: { costo_fijo: 1500000, factor_esfuerzo: 0.62, costo_mensual: 1800000 }
+casos:
+  pequena:
+    productos: 300
+    max_personas_equipo: 4
+    fases_semanas: { descubrimiento_diseno: 1, backend_base: 2, catalogo_usuarios: 2, carrito: 1, pagos: 1, pruebas_qa_estabilizacion: 1, despliegue: 1 }
+    plazo_maximo_semanas: 16
+    presupuesto_tope: 120000000
+    distribucion_esfuerzo: { frontend: 0.40, backend: 0.40, qa: 0.20, ux: 0, lider_tecnico: 0, devops: 0 }
+    modulos_horas: { catalogo: 160, carrito: 100, pagos: 100, usuarios: 90, panel: 110 }
+    horas_normativas: { ley_1581: 64, facturacion_electronica: 56 }
+  mediana:
+    productos: 5000
+    max_personas_equipo: 7
+    fases_semanas: { descubrimiento_diseno: 2, backend_base: 3, catalogo_usuarios: 4, carrito: 2, pagos: 2, pruebas_qa_estabilizacion: 2, despliegue: 1 }
+    plazo_maximo_semanas: 20
+    presupuesto_tope: 250000000
+    modulos_horas: { catalogo: 300, carrito: 220, pagos: 220, usuarios: 180, panel: 220 }
+    horas_normativas: { ley_1581: 96, facturacion_electronica: 88 }
+  grande:
+    productos: 50000
+    max_personas_equipo: 12
+    fases_semanas: { descubrimiento_diseno: 3, backend_base: 4, catalogo_usuarios: 6, carrito: 4, pagos: 3, pruebas_qa_estabilizacion: 3, despliegue: 1 }
+    plazo_maximo_semanas: 24
+    presupuesto_tope: 400000000
+    modulos_horas: { catalogo: 520, carrito: 400, pagos: 400, usuarios: 320, panel: 440 }
+    horas_normativas: { ley_1581: 144, facturacion_electronica: 136 }
+# Participación ilustrativa del esfuerzo de módulos y cumplimiento asignado por rol.
+distribucion_esfuerzo: { frontend: 0.28, backend: 0.32, qa: 0.16, ux: 0.10, lider_tecnico: 0.08, devops: 0.06 }
