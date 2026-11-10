@@ -52,4 +52,4 @@ Es una aproximación didáctica y no sustituye cotizaciones ni asesoría jurídi
 
 ## Origen
 
-Basado en un trabajo académico en equipo de la Universidad ECCI; esta es una reimplementación individual y abierta.
+Basado en un trabajo académico en equipo de la Universidad ECCI, hecho con mi compañero **David Alexander Rincón Corredor (Kuronoma)** y equipo; esta es una reimplementación individual y abierta.
