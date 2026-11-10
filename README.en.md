@@ -87,7 +87,7 @@ uv run python -m optimizacion_ecommerce resolver --caso pequena
 
 ## Origin
 
-Individual, open-source reimplementation based on an academic team project at Universidad ECCI, carried out with my teammate **David Alexander Rincón Corredor (Kuronoma)** and team.
+Individual, open-source reimplementation based on an academic team project at Universidad ECCI, carried out with my teammate [**David Alexander Rincón Corredor (Kuronoma)**](https://www.linkedin.com/in/davidalexanderrinconcorredorkuronoma/) and team.
 
 ## License
 
