@@ -4,3 +4,7 @@ __pycache__/
 .pytest_cache/
 resultados/*.csv
 resultados/*.png
+.env
+.agents/
+.codex/
+.claude/
